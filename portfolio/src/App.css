@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+
+.Header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: .3fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.Home {
+  display: grid;
+  grid-template-columns: .3fr repeat(2, 1fr) .3fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+}
+
+
