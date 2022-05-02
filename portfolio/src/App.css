@@ -1,10 +1,37 @@
 .aboutMe {
-  margin: 10px;
+  margin: 15px;
 }
 
 .App {
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+button, input {
+  align-items: center;
+  background-color: white;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #000;
+  display: inline-flex;
+  fill: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 3vw;
+  justify-content: center;
+  outline: 0;
+  min-width: 8vw;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+button:hover {
+  border-color: rgb(46,76,127);
+  color: rgb(46,76,127);
+  fill: rgb(46,76,127);
 }
 
 .Footer {
@@ -28,8 +55,10 @@
   background: linear-gradient(0deg, rgba(46,76,127,1) 0%, rgba(54,87,144,1) 100%);
 }
 
-.Home, .Projects, .Resume {
+.Home, .Projects {
   min-height: calc(90vh);
+  animation: fadeIn ease 2s;
+  animation-iteration-count: 1;
 }
 
 .homeImage {
@@ -39,7 +68,8 @@
   grid-area: 1 / 1 / 3 / 2;
   height: 90%;
   width: 95%;
-  box-shadow: 0 10px 10px #303030;
+  box-shadow: .5rem .5rem 10px 1px rgba(0, 0, 0, 0.729);
+  animation: moveInLeft ease 3s;
 }
 
 .homeIntro {
@@ -61,13 +91,16 @@
 .homeText, .homeText2 {
   height: 90%;
   width: 95%;
-  box-shadow: 0 10px 10px #303030;
+  box-shadow: .5rem .5rem 10px 1px rgba(0, 0, 0, 0.729);
+  animation: moveInRight ease 2.5s;
 }
 
 .homeText {
   grid-area: 1 / 2 / 2 / 3;
   display: flex;
   align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .homeText2 {
@@ -85,11 +118,13 @@
   margin: 0 10px 0 10px;
   cursor: pointer;
   text-decoration: none;
-}
-
-.icon:visited {
   color: white;
 }
+
+.icon:nth-child(2) {
+  color: black;
+}
+
 
 .logo {
   position: absolute;
@@ -103,10 +138,71 @@
   color: white
 }
 
-.projectCard {
+.projectCard1, .projectCard2, .projectCard3, .projectCard4 {
   height: 90%;
   width: 95%;
-  box-shadow: 0 10px 10px #303030;
+  box-shadow: .5rem .5rem 10px 1px rgba(0, 0, 0, 0.729);
+  overflow: hidden;
+}
+
+.projectCard1, .projectCard3 {
+  animation: moveInLeft ease 2.5s;
+}
+
+.projectCard2, .projectCard4 {
+  animation: moveInRight ease 2.5s;
+}
+
+.projectCard1 {
+  background-image: url("https://camo.githubusercontent.com/5cbbd9b7b1ead06da19bd28ce5da408863dfd1b5a35f17242dfc7b895e81e320/68747470733a2f2f692e696d6775722e636f6d2f64736f685959542e706e67");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projectCard2 {
+  background-image: url("https://i.ibb.co/NmQ0TYF/Cert-Expert.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projectCard3 {
+  background-image: url("https://github.com/sbandy9210/MyLieu-Frontend/raw/main/Assets/Homepage.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projectCard4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projectDescription {
+  height: 95%;
+  opacity: 0;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.projectDescText {
+  color: white;
+  margin: 0px 75px 0px 75px;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.projectDescription:hover {
+  opacity: 1;
+  background-color: #000000b1;
+}
+
+.projectCardTitle {
+  color: white;
+  background-color: #000000b1;
+  margin: 0px;
 }
 
 .projectSection {
@@ -138,5 +234,31 @@
   width: 95vh;
 }
 
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+@keyframes moveInRight {
+  0% {
+      transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+   }
+}
+
+@keyframes moveInLeft {
+  0% {
+      transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
+   }
+}
 
 
