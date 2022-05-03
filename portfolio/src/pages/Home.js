@@ -15,6 +15,7 @@ return (
             <p className="aboutMe">My social media accounts and email can be found in the footer of this webpage</p>
         </div>
     </section>
+    
 </div>
     )
 }
