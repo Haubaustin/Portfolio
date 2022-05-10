@@ -20,6 +20,14 @@ const Projects = () => {
         window.open("https://github.com/Haubaustin/MyLieu_Backend")
     }
 
+    const inVinFront = () => {
+        window.open("https://github.com/Haubaustin/inVINEtory_frontend")
+    }
+
+    const inVinBack = () => {
+        window.open("https://github.com/Haubaustin/inVINEtory_backend")
+    }
+
     //Deployments
     const coinChartDep = () => {
         window.open("http://www.coinchartapp.com/")
@@ -55,7 +63,7 @@ return (
                 <p className="projectDescText">JSON Web Tokens</p>
                 <span>
                     <button onClick={certExpertRepo}>Github Repo</button>
-                    <button>Deployed App</button>
+                    {/* <button>Deployed App</button> */}
                 </span>
             </div>
         </div>
@@ -75,7 +83,13 @@ return (
         <div className="projectCard4">
             <h2 className="projectCardTitle">Final Project</h2>
             <div className="projectDescription">
-                <p className="projectDescText">Coming May 16th</p>
+                <p className="projectDescText">inVINtory</p>
+                <p className="projectDescText">React, Express, Node, PostgreSQL</p>
+                <p className="projectDescText">Work in Progress</p>
+                <span>
+                    <button onClick={inVinFront}>Github Frontend</button>
+                    <button onClick={inVinBack}>Github Backend</button>
+                </span>
 
             </div>
         </div>
