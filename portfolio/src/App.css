@@ -1,6 +1,6 @@
 .aboutMe {
   margin: 10px;
-  font-size: 1.40vw;
+  font-size: 1vw
 }
 
 .App {
@@ -44,6 +44,9 @@ button:hover {
   align-items: center;
   background: rgb(101,112,125);
   background: radial-gradient(circle, rgba(101,112,125,1) 0%, rgba(86,96,108,1) 100%);
+  left: 0;
+  bottom: 0;
+  position: relative;
 }
 
 .Header {
@@ -58,7 +61,7 @@ button:hover {
 }
 
 .Home, .Projects {
-  min-height: calc(90vh);
+  height: 90vh;
   animation: fadeIn ease 2s;
   animation-iteration-count: 1;
 }
@@ -72,45 +75,49 @@ button:hover {
   width: 95%;
   box-shadow: .5rem .5rem 10px 1px rgba(0, 0, 0, 0.729);
   animation: moveInLeft ease 3s;
+  align-self: flex-start;
+  margin-top: 10px;
 }
 
 .homeIntro {
-  min-height: calc(80vh);
-  margin: 15px auto 15px auto;
+  margin: 35px auto 10px auto;
   padding: 15px 0 15px 0;
   width: 90%;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: .5fr 1fr;
+  grid-template-rows: .3fr 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   align-items: center;
   justify-items: center;
+  height: 80vh;
 }
 
 .homeText, .homeText2 {
-  height: 90%;
+  align-self: flex-start;
   width: 95%;
-  box-shadow: .3rem .3rem 10px 1px rgba(0, 0, 0, 0.729);
+  box-shadow: .5rem .5rem 10px 1px rgba(0, 0, 0, 0.729);
   animation: moveInRight ease 2.5s;
+  border: .5px solid black;
 }
 
 .homeText {
-  height: 70%;
   grid-area: 1 / 2 / 2 / 3;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .homeText2 {
   grid-area: 2 / 2 / 3 / 3;
-  height: fit-content;
+  min-height: fit-content;
   max-height: 100%;
   font-weight: 400;
+  margin-top: 10px;
 }
 
 .homeTextTitle {
@@ -215,8 +222,7 @@ button:hover {
 }
 
 .projectSection {
-  height: calc(90vh);
-  margin: 15px auto 15px auto;
+  margin: 35px auto 10px auto;
   padding: 15px 0 15px 0;
   width: 90%;
   border-top: 1px solid black;
@@ -227,7 +233,8 @@ button:hover {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   align-items: center;
-  justify-items: center
+  justify-items: center;
+  height: 80vh;
 }
 
 .Resume {
@@ -270,4 +277,51 @@ button:hover {
    }
 }
 
+
+@media screen and (max-width: 750px) {
+
+  .homeIntro {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: .3fr 1fr;
+    margin: 10px auto 10px auto;
+    height: inherit;
+  }
+
+  .homeText, .homeText2 {
+    box-shadow: .25rem .25rem 5px 1px rgba(0, 0, 0, 0.729);
+  }
+
+  .homeImage {
+    box-shadow: .25rem .25rem 5px 1px rgba(0, 0, 0, 0.729);
+
+  }
+
+  .homeTextTitle {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .aboutMe {
+    font-size: 8px;
+    margin: 5px;
+  }
+
+  .aboutMeTitle {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .projectDescText {
+    font-size: 10px;
+    margin: 0 5px
+  }
+
+  .projectCardTitle {
+    font-size: 16px;
+  }
+
+  button {
+    height: 20px;
+  }
+}
 

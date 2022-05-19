@@ -30,7 +30,7 @@ const Projects = () => {
 
     //Deployments
     const coinChartDep = () => {
-        window.open("http://www.coinchartapp.com/")
+        window.open("https://www.coinchartapp.com/")
     }
 
     const myLieuDep = () => {
@@ -47,7 +47,7 @@ return (
                 <p className="projectDescText">Cryptocurrency search application</p>
                 <p className="projectDescText">HTML, CSS, Javascript</p>
                 <p className="projectDescText">CoinGecko API integration, AnyChart data visualization</p>
-                <p className="projectDescText"> Deployed as an AWS S3 static website with a subdomain and routing records</p>
+                <p className="projectDescText"> Deployed as an AWS S3 static website with a subdomain, routing records, and Cloudfront</p>
                 <span>
                     <button onClick={coinChartRepo}>Github Repo</button>
                     <button onClick={coinChartDep}>Deployed App</button>
