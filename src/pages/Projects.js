@@ -1,6 +1,3 @@
-
-
-
 const Projects = () => {
 
     //Repo Links
@@ -21,11 +18,11 @@ const Projects = () => {
     }
 
     const inVinFront = () => {
-        window.open("https://github.com/Haubaustin/inVINEtory_frontend")
+        window.open("https://github.com/Haubaustin/inVINtory_frontend")
     }
 
     const inVinBack = () => {
-        window.open("https://github.com/Haubaustin/inVINEtory_backend")
+        window.open("https://github.com/Haubaustin/inVINtory_backend")
     }
 
     //Deployments
