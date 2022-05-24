@@ -75,14 +75,13 @@ button:hover {
   width: 95%;
   box-shadow: .5rem .5rem 10px 1px rgba(0, 0, 0, 0.729);
   animation: moveInLeft ease 3s;
-  align-self: flex-start;
-  margin-top: 10px;
+  align-self: flex-start
 }
 
 .homeIntro {
   margin: 10px auto 10px auto;
   padding: 15px 0 15px 0;
-  width: 90%;
+  width: 95%;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   display: grid;
@@ -92,7 +91,7 @@ button:hover {
   grid-row-gap: 0px;
   align-items: center;
   justify-items: center;
-  height: 80vh;
+  height: 80vh
 }
 
 .homeText, .homeText2 {
@@ -101,6 +100,7 @@ button:hover {
   box-shadow: .5rem .5rem 10px 1px rgba(0, 0, 0, 0.729);
   animation: moveInRight ease 2.5s;
   border: .5px solid black;
+  align-self: center
 }
 
 .homeText {
@@ -109,7 +109,6 @@ button:hover {
   align-items: center;
   text-align: center;
   justify-content: center;
-  margin-top: 10px;
 }
 
 .homeText2 {
@@ -117,14 +116,12 @@ button:hover {
   min-height: fit-content;
   max-height: 100%;
   font-weight: 400;
-  margin-top: 10px;
 }
 
 .homeTextTitle {
   font-weight: 1000;
   text-align: left;
   font-size: 2.3vw;
-  margin: 10px;
 }
 
 .icon {
@@ -137,7 +134,6 @@ button:hover {
 .icon:nth-child(2) {
   color: black;
 }
-
 
 .logo {
   position: absolute;
@@ -285,7 +281,7 @@ button:hover {
 @media screen and (max-width: 750px) {
 
   .aboutMe {
-    font-size: 9px;
+    font-size: 10px;
     margin: 5px;
   }
 
@@ -308,11 +304,13 @@ button:hover {
     grid-template-rows: .3fr repeat(2, 1fr);
     margin: 10px auto 10px auto;
     height: fit-content;
+    grid-row-gap: 10px;
   }
 
   .homeImage {
     grid-area: 2 / 1 / 3 / 2;
     box-shadow: .25rem .25rem 5px 1px rgba(0, 0, 0, 0.729);
+    align-self: center;
   }
 
   .homeText {
