@@ -36,13 +36,17 @@ const Projects = () => {
     const myLieuDep = () => {
         window.open("https://mylieu.herokuapp.com/")
     }
+
+    const inVinDeploy = () => {
+        window.open("https://invintory.link")
+    }
     
 
 return (
 <div className="Projects">
     <section className="projectSection">
         <div className="projectCard1">
-            <h2 className="projectCardTitle">Coin Chart </h2>
+            <h2 className="projectCardTitle">Coin Chart (Vanilla JS)</h2>
             <div className="projectDescription">
                 <p className="projectDescText">Cryptocurrency search application</p>
                 <p className="projectDescText">HTML, CSS, Javascript</p>
@@ -56,11 +60,11 @@ return (
 
         </div>
         <div className="projectCard2">
-            <h2 className="projectCardTitle">Cert Expert </h2>
+            <h2 className="projectCardTitle">Cert Expert (M.E.R.N.)</h2>
             <div className="projectDescription">
                 <p className="projectDescText">IT certification blog for sharing resources</p>
                 <p className="projectDescText">Mongoose, Express, React, Node</p>
-                <p className="projectDescText">JSON Web Tokens</p>
+                <p className="projectDescText">JSON Web Token Authentication</p>
                 <span>
                     <button onClick={certExpertRepo}>Github Repo</button>
                     {/* <button>Deployed App</button> */}
@@ -68,11 +72,11 @@ return (
             </div>
         </div>
         <div className="projectCard3">
-            <h2 className="projectCardTitle">MyLieu (Group Project)</h2>
+            <h2 className="projectCardTitle">MyLieu (Group Project) (P.E.R.N.)</h2>
             <div className="projectDescription">
                 <p className="projectDescText">A Medium like blog application</p>
                 <p className="projectDescText">PostgreSQL, Express, React, Node</p>
-                <p className="projectDescText">JSON Web Tokens</p>
+                <p className="projectDescText">JSON Web Token Authentication</p>
                 <span>
                     <button onClick={myLieuFront}>Github Frontend</button>
                     <button onClick={myLieuBack}>Github Backend</button>
@@ -81,14 +85,16 @@ return (
             </div>
         </div>
         <div className="projectCard4">
-            <h2 className="projectCardTitle">Final Project</h2>
+            <h2 className="projectCardTitle">inVINtory (P.E.R.N.)</h2>
             <div className="projectDescription">
-                <p className="projectDescText">inVINtory</p>
-                <p className="projectDescText">React, Express, Node, PostgreSQL</p>
-                <p className="projectDescText">Work in Progress</p>
+                <p className="projectDescText">Wine storage tracking web application</p>
+                <p className="projectDescText">PostgreSQL, Express, React, Node</p>
+                <p className="projectDescText">Frontend Deployed on AWS Amplify</p>
+                <p className="projectDescText">JSON Web Token Authentication</p>
                 <span>
                     <button onClick={inVinFront}>Github Frontend</button>
                     <button onClick={inVinBack}>Github Backend</button>
+                    <button onClick={inVinDeploy}>Deployed App</button>
                 </span>
 
             </div>
