@@ -41,6 +41,9 @@ const Projects = () => {
 
 return (
 <div className="Projects">
+    <section className="projectAbout">
+        <h3>Hover on the project images below to display a brief description of the project, see the technologies utilized, and access links to the deployed apps and Github repos. </h3>
+    </section>
     <section className="projectSection">
         <div className="projectCard1">
             <h2 className="projectCardTitle">Coin Chart (Vanilla JS)</h2>

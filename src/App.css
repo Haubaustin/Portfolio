@@ -281,7 +281,7 @@ button:hover {
 @media screen and (max-width: 750px) {
 
   .aboutMe {
-    font-size: 10px;
+    font-size: 12px;
     margin: 5px;
   }
 
@@ -301,7 +301,7 @@ button:hover {
 
   .homeIntro {
     grid-template-columns: 1fr;
-    grid-template-rows: .3fr repeat(2, 1fr);
+    grid-template-rows: .2fr .8fr 1fr;
     margin: 10px auto 10px auto;
     height: fit-content;
     grid-row-gap: 10px;
@@ -327,6 +327,11 @@ button:hover {
 
   .homeTextTitle {
     font-size: 20px;
+  }
+
+  .projectAbout {
+    margin: 0 10px;
+    font-size: smaller;
   }
 
   .projectCard1, .projectCard2, .projectCard3, .projectCard4 {
