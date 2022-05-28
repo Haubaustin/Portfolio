@@ -42,7 +42,8 @@ const Projects = () => {
 return (
 <div className="Projects">
     <section className="projectAbout">
-        <h3>Hover on the project images below to display a brief description of the project, see the technologies utilized, and access links to the deployed apps and Github repos. </h3>
+        <h3>Hover on the project images below to display a brief description of the project, see the technologies utilized, and access links to the deployed apps and Github repos.</h3>
+        <p>Skills: React.js, Express.js, Node.js, PostgreSQL, MongoDB, HTML, CSS, JSON Web Tokens (JWT), AWS</p>
     </section>
     <section className="projectSection">
         <div className="projectCard1">

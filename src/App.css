@@ -1,6 +1,6 @@
 .aboutMe {
   margin: 10px;
-  font-size: 1vw
+  font-size: 1.1vw
 }
 
 .App {
@@ -46,7 +46,7 @@ button:hover {
   background: radial-gradient(circle, rgba(101,112,125,1) 0%, rgba(86,96,108,1) 100%);
   left: 0;
   bottom: 0;
-  position: relative;
+  position: relative
 }
 
 .Header {
@@ -100,7 +100,7 @@ button:hover {
   box-shadow: .5rem .5rem 10px 1px rgba(0, 0, 0, 0.729);
   animation: moveInRight ease 2.5s;
   border: .5px solid black;
-  align-self: center
+  align-self: flex-start
 }
 
 .homeText {
@@ -109,6 +109,7 @@ button:hover {
   align-items: center;
   text-align: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .homeText2 {
@@ -120,8 +121,12 @@ button:hover {
 
 .homeTextTitle {
   font-weight: 1000;
-  text-align: left;
   font-size: 2.3vw;
+  margin: 5px 0;
+}
+
+.homeTextTitle2 {
+  margin: 0;
 }
 
 .icon {
@@ -315,6 +320,7 @@ button:hover {
 
   .homeText {
     grid-area: 1 / 1 / 2 / 2;
+    align-self: center;
   }
 
   .homeText2 {
@@ -327,6 +333,10 @@ button:hover {
 
   .homeTextTitle {
     font-size: 20px;
+  }
+
+  .homeTextTitle2 {
+    font-size: 15px;
   }
 
   .projectAbout {
