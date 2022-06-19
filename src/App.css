@@ -129,6 +129,7 @@ button:hover {
   padding: 0;
   margin: 0;
   columns: 3;
+  font-size: 1.0vw;
 }
 
 .homeTextTitle {
