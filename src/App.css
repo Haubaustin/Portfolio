@@ -1,7 +1,6 @@
 .aboutMe {
   margin: 10px;
   font-size: 1.1vw;
-  font-weight: 500;
 }
 
 .App {
@@ -76,6 +75,10 @@ button:hover {
 .homeAbout {
   animation: fadeIn ease 3s;
   animation-iteration-count: 1;
+}
+
+.homeAbout > h3 {
+  font-size: 1.3vw;
 }
 
 .homeBackground {
@@ -162,6 +165,11 @@ button:hover {
   color: white;
 }
 
+.icon:hover {
+  animation: bounce ease 1s;
+
+}
+
 .icon:nth-child(2) {
   color: black;
 }
@@ -237,7 +245,7 @@ button:hover {
 .projectDescText {
   color: white;
   margin: 0px 75px 0px 75px;
-  font-weight: 300;
+  font-weight: 600;
   text-align: left;
 }
 
@@ -307,6 +315,24 @@ button:hover {
   100% {
     transform: translateX(0px);
    }
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-10px);
+		-ms-transform:     translateY(-10px);
+		transform:         translateY(-10px)
+	}
+	60% {
+		-webkit-transform: translateY(-10px);
+		-ms-transform:     translateY(-10px);
+		transform:         translateY(-10px)
+	}
 }
 
 @media screen and (max-width: 750px) {
