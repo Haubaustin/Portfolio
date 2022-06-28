@@ -18,14 +18,14 @@ return (
                         className="icon" 
                         target="_blank" 
                         rel="noreferrer">
-                        <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                        <FontAwesomeIcon icon={faLinkedin} size="2x" className="icon" />
                     </a>
                     <FontAwesomeIcon icon={faEnvelope} size="2x" className="icon" onClick={() => window.location = 'mailto:haubaustin@gmail.com'}/>
                     <a href="https://github.com/Haubaustin"
                         className="icon" 
                         target="_blank" 
                         rel="noreferrer">
-                        <FontAwesomeIcon icon={faGithubSquare} size="2x" />
+                        <FontAwesomeIcon icon={faGithubSquare} size="2x" className="icon" />
                     </a>
                 </div>
             </div>
