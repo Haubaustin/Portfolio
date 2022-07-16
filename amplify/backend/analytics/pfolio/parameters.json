@@ -1,0 +1,21 @@
+{
+    "appName": "pfolio",
+    "roleName": "pinpointLambdaRolecbb155a8",
+    "cloudformationPolicyName": "cloudformationPolicycbb155a8",
+    "cloudWatchPolicyName": "cloudWatchPolicycbb155a8",
+    "pinpointPolicyName": "pinpointPolicycbb155a8",
+    "authPolicyName": "pinpoint_amplify_cbb155a8",
+    "unauthPolicyName": "pinpoint_amplify_cbb155a8",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
