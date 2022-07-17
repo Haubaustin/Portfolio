@@ -6,6 +6,7 @@ import Projects from './pages/Projects'
 import { Amplify, Analytics, Auth } from 'aws-amplify';
 // import Auth from '@aws-amplify/auth';
 import awsConfig from './aws-exports';
+import SkillCert from './pages/SkillCerts';
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
+        {/* <Route path="/skills" element={<SkillCert />} /> */}
       </Routes>
     </div>
   );

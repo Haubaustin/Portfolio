@@ -14,7 +14,7 @@ return (
                 <h1 className="homeTextTitle">AUSTIN HAUBENSCHILD</h1>
                 <h2 className="homeTextTitle2">FULLSTACK DEVELOPER</h2>
                 <div className="homeSocial">
-                    <a href="https://www.linkedin.com/in/austin-haubenschild-211472169/" 
+                    <a href="https://www.linkedin.com/in/austin-haubenschild/" 
                         className="icon" 
                         target="_blank" 
                         rel="noreferrer">

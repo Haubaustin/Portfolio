@@ -66,14 +66,14 @@ return (
                     <button 
                         onClick={coinChartRepo}
                         data-amplify-analytics-on='click'
-                        data-amplify-analytics-name='CCRepo'
+                        data-amplify-analytics-name='CoinChartRepo'
                         >
                             Github Repo
                     </button>
                     <button 
                         onClick={coinChartDep}
                         data-amplify-analytics-on='click'
-                        data-amplify-analytics-name='CCDep'
+                        data-amplify-analytics-name='CoinChartDep'
                         >
                             Deployed App
                     </button>
@@ -93,7 +93,7 @@ return (
                     <button 
                         onClick={certExpertRepo}
                         data-amplify-analytics-on='click'
-                        data-amplify-analytics-name='CERepo'
+                        data-amplify-analytics-name='CertExpertRepo'
                         >
                             Github Repo
                     </button>

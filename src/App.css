@@ -40,7 +40,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 100%;
-  justify-content: center;
+  justify-content: left;
   height: 50px;
   padding-top: 10px;
   background: rgb(46,76,127);
@@ -289,6 +289,15 @@ button:hover {
 .resumeDisplay {
   height: 85vh;
   width: 95vh;
+}
+
+.SkillCertSection {
+  margin: 10px auto 10px auto;
+  padding: 15px 0 15px 0;
+  width: 95%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  min-height: 80vh;
 }
 
 @keyframes fadeIn {

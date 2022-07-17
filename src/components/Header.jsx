@@ -14,6 +14,9 @@ return (
         <h2>
             <Link to="/" className="Nav" >Home</Link>
         </h2>
+        {/* <h2>
+            <Link to="/skills" className="Nav">Skills/Certs</Link>
+        </h2> */}
         <h2>
             <Link to="/projects" className="Nav">Projects</Link>
         </h2>
