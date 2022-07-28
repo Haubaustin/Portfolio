@@ -14,7 +14,6 @@ const Header = () => {
 return (
 <div className="Header">
     <div className="HeaderTitle">
-        {/* <h1>Austin Haubenschild</h1> */}
         <img src={img} alt="" className="HeaderImg"></img>
     </div>
     <div className="HeaderLinks">
@@ -27,9 +26,23 @@ return (
                     Home
             </Link>
         </h2>
-        {/* <h2>
-            <Link to="/skills" className="Nav">Skills/Certs</Link>
-        </h2> */}
+        <h2
+            className="headerlinkbreak">
+            |
+        </h2>
+        <h2>
+            <Link 
+                to="/skills" 
+                className="Nav"
+                data-amplify-analytics-on='click'
+                data-amplify-analytics-name='Skills/CertLink'>
+                    Skills/Certs
+            </Link>
+        </h2>
+        <h2
+            className="headerlinkbreak">
+                |
+        </h2>
         <h2>
             <Link 
                 to="/projects" 
@@ -38,6 +51,10 @@ return (
                 data-amplify-analytics-name='ProjectsLink'>
                     Projects
             </Link>
+        </h2>
+        <h2
+            className="headerlinkbreak">
+                |
         </h2>
         <h2> 
             <a 
